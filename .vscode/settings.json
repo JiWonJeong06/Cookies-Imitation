@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Cookiesrun  Imitation.sln"
+    "dotnet.defaultSolution": "Cookies-Imitation.sln"
 }
