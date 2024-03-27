@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Cookies-Imitation.sln"
+    "dotnet.defaultSolution": "Cookies-Imitation.sln",
+    "editor.fontSize": 22
 }
