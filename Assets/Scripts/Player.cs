@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
         else if(Input.GetKeyUp(KeyCode.DownArrow)) {
               AnimatorChange(State.Run);
         }
+        
     }
     //땅에 닿았을 때 다시 달리는 모션
     void OnCollisionStay2D(Collision2D collision) {
