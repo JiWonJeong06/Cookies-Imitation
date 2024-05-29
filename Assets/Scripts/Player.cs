@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     }
     void Update()
     {   
-        //점프
+    
         if(Input.GetKeyDown(KeyCode.Space) && (JumpCount < MaxJumpCount)) {
             JumpCount++;
             rigid.velocity = Vector2.zero;
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
             
         }
         
-        //슬라이드
+  
         if(Input.GetKey(KeyCode.DownArrow) && isGround) {
               AnimatorChange(State.Slide);
               
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         }
         
     }
-    //땅에 닿았을 때 다시 달리는 모션
+
     void OnCollisionStay2D(Collision2D collision) {
         
         if(!isGround) {
@@ -51,12 +51,12 @@ public class Player : MonoBehaviour
         isGround = true;
       
     }  
-    // 점프 모션으로 변환
+
     void OnCollisionExit2D(Collision2D collision) {
         AnimatorChange(State.Jump);
         isGround = false;
     }
-    //애니메이션 변경 함수
+
     void AnimatorChange(State state) {
        animator.SetInteger("State", (int)state);
     }

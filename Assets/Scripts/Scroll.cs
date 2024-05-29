@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//화면 스크롤
+
 public class Scroll : MonoBehaviour
 {
     public int Count;
