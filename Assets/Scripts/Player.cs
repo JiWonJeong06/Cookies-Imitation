@@ -61,6 +61,11 @@ public class Player : MonoBehaviour
        animator.SetInteger("State", (int)state);
     }
 
+    //game end
+    void OnTriggerEnter2D(){
+        rigid.simulated = false;
+        AnimatorChange(State.Die);
+    }
 
 
 }
