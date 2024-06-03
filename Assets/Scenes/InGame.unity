@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 23831562}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.393274, y: -0.8375257, z: 0}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 31283343}
   - component: {fileID: 31283346}
   - component: {fileID: 31283345}
+  - component: {fileID: 31283347}
   m_Layer: 0
   m_Name: 1-level-object_0
   m_TagString: Untagged
@@ -307,6 +308,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &31283347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31283342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &69482714
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,8 +964,8 @@ GameObject:
   m_Component:
   - component: {fileID: 121119873}
   - component: {fileID: 121119876}
-  - component: {fileID: 121119874}
   - component: {fileID: 121119875}
+  - component: {fileID: 121119874}
   m_Layer: 0
   m_Name: 1Level tile_0 (3)
   m_TagString: Untagged
@@ -3498,7 +3511,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.5
+  orthographic size: 2.3048973
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4665,13 +4678,13 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: a4d88a442a4f55c4c9928fa0034dcfbc, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 452398544}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: GameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6038,7 +6051,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 453109073}
