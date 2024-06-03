@@ -24,7 +24,10 @@ public class Player : MonoBehaviour
     }
     void Update()
     {   
-    
+        if (!GameManager.Gamestart) 
+            return;
+        
+
         if(Input.GetKeyDown(KeyCode.Space) && (JumpCount < MaxJumpCount)) {
             JumpCount++;
             rigid.velocity = Vector2.zero;
@@ -68,7 +71,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(){
         rigid.simulated = false;
         AnimatorChange(State.Die);
-        GameManager.GameOver();
+        onHit.Invoke();
     }
 
 
