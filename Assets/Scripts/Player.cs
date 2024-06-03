@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     public bool isGround;
     public int JumpCount = 0;
     public int MaxJumpCount = 2;
+
+    public UnityEvent onHit;
     Rigidbody2D rigid;
     Animator animator;
     // Start is called before the first frame update
@@ -65,6 +68,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(){
         rigid.simulated = false;
         AnimatorChange(State.Die);
+        GameManager.GameOver();
     }
 
 
