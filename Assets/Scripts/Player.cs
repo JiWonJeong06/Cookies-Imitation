@@ -16,12 +16,17 @@ public class Player : MonoBehaviour
     public UnityEvent onHit;
     Rigidbody2D rigid;
     Animator animator;
+    Sound sound;
     // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sound = GetComponent<Sound>();
     }
+
+    //void Start() {
+    //    sound.PlaySound(Sound.Sfx.Reset); }
     void Update()
     {   
         if (!GameManager.Gamestart) 
@@ -33,6 +38,7 @@ public class Player : MonoBehaviour
             rigid.velocity = Vector2.zero;
             rigid.AddForce(Vector2.up * startJumpPower, ForceMode2D.Impulse);
             AnimatorChange(State.Jump);
+            sound.PlaySound(Sound.Sfx.Jump);
             
         }
         
@@ -60,6 +66,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision) {
         AnimatorChange(State.Jump);
+        
         isGround = false;
     }
 
