@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &37025444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,9 +458,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &37950016
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &37950022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,9 +638,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &63424092
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &163072371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &175070649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,9 +1346,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &189244668
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,7 +3009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 40}
+  m_AnchoredPosition: {x: 5, y: 20}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481229427
@@ -3039,13 +3039,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 0
 --- !u!222 &481229428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3386,7 +3386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &518155154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &601913792
 Transform:
   m_ObjectHideFlags: 0
@@ -4116,7 +4116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &607814545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4630,6 +4630,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 481229426}
+  - {fileID: 1333425543}
   - {fileID: 1145242169}
   - {fileID: 1247428179}
   m_Father: {fileID: 0}
@@ -5249,7 +5250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &721958346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5265,9 +5266,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &754976447
 GameObject:
   m_ObjectHideFlags: 0
@@ -7202,7 +7203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &982565391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8678,7 +8679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5, y: 32.5}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145242170
@@ -8703,18 +8704,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 0
 --- !u!222 &1145242171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9211,7 +9212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1161209972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9227,9 +9228,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &1164615246
 GameObject:
   m_ObjectHideFlags: 0
@@ -10181,7 +10182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1233923561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10197,9 +10198,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &1247428178
 GameObject:
   m_ObjectHideFlags: 0
@@ -10283,7 +10284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1249115465
 Transform:
   m_ObjectHideFlags: 0
@@ -10309,6 +10310,85 @@ Transform:
   - {fileID: 621230675}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333425542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333425543}
+  - component: {fileID: 1333425545}
+  - component: {fileID: 1333425544}
+  m_Layer: 5
+  m_Name: High Score (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1333425543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333425542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 637878077}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: 23}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1333425544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333425542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 3
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uCD5C\uACE0 \uC810\uC218\n"
+--- !u!222 &1333425545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333425542}
+  m_CullTransparentMesh: 1
 --- !u!1 &1334737764
 GameObject:
   m_ObjectHideFlags: 0
@@ -10628,7 +10708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1339658686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11441,7 +11521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1400426829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11457,9 +11537,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &1445259351
 GameObject:
   m_ObjectHideFlags: 0
@@ -11664,7 +11744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1452921464
 Transform:
   m_ObjectHideFlags: 0
@@ -12136,7 +12216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1586470565
 Transform:
   m_ObjectHideFlags: 0
@@ -13445,7 +13525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1736200170
 Transform:
   m_ObjectHideFlags: 0
@@ -13754,7 +13834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1766676615
 Transform:
   m_ObjectHideFlags: 0
@@ -14858,7 +14938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &1824513241
 Transform:
   m_ObjectHideFlags: 0
@@ -15445,7 +15525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1866777009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15461,9 +15541,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &1869275791
 GameObject:
   m_ObjectHideFlags: 0
@@ -16167,7 +16247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1904917586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16821,7 +16901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &1925624244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16837,9 +16917,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &1939005747
 GameObject:
   m_ObjectHideFlags: 0
@@ -17665,7 +17745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &2008312615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17681,9 +17761,9 @@ MonoBehaviour:
   sprites:
   - {fileID: 963229215, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -364786866, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
-  - {fileID: 1006004144, guid: b3d00774e2f71854d8dc78aedc43baab, type: 3}
   - {fileID: -1760774158, guid: beeb7db809a4904438c4818c011f6483, type: 3}
   - {fileID: -351793445, guid: beeb7db809a4904438c4818c011f6483, type: 3}
+  - {fileID: 843573120, guid: beeb7db809a4904438c4818c011f6483, type: 3}
 --- !u!1 &2037299984
 GameObject:
   m_ObjectHideFlags: 0
@@ -17845,7 +17925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &2037299990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18025,7 +18105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!114 &2055717372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18090,7 +18170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 3
+  Scrollspeed: 2
 --- !u!4 &2074742966
 Transform:
   m_ObjectHideFlags: 0
