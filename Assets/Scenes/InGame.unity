@@ -8725,8 +8725,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015812397, y: 0.46969295}
-  m_Size: {x: 0.8366051, y: 0.94202113}
+  m_Offset: {x: -0.03892362, y: 0.44896564}
+  m_Size: {x: 0.7028024, y: 0.9042932}
   m_Direction: 0
 --- !u!50 &1145664093
 Rigidbody2D:
@@ -8836,6 +8836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: bc7b300746c89e641a518128e67a8c7e, type: 3}
+  - {fileID: 8300000, guid: 7868cee24ae40c84b9685b1514e800ee, type: 3}
 --- !u!82 &1145664097
 AudioSource:
   m_ObjectHideFlags: 0

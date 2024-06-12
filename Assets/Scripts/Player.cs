@@ -37,15 +37,15 @@ public class Player : MonoBehaviour
             JumpCount++;
             rigid.velocity = Vector2.zero;
             rigid.AddForce(Vector2.up * startJumpPower, ForceMode2D.Impulse);
-            AnimatorChange(State.Jump);
             sound.PlaySound(Sound.Sfx.Jump);
+            AnimatorChange(State.Jump);
             
         }
         
   
         if(Input.GetKey(KeyCode.DownArrow) && isGround) {
+              sound.PlaySound(Sound.Sfx.Slide);
               AnimatorChange(State.Slide);
-              
   
         }
         else if(Input.GetKeyUp(KeyCode.DownArrow)) {
