@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
     Sound sound;
+    public Collider2D collider1;
+    public Collider2D collider2;
     // Start is called before the first frame update
     void Awake()
     {
@@ -81,5 +83,8 @@ public class Player : MonoBehaviour
         onHit.Invoke();
     }
 
+    void ColliderChange() {
+        
+    }
 
 }
