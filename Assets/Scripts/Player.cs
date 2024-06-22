@@ -31,10 +31,11 @@ public class Player : MonoBehaviour
     //    sound.PlaySound(Sound.Sfx.Reset); }
     void Update()
     {   
+        
         if (!GameManager.Gamestart) 
             return;
         
-
+ 
         if(Input.GetKeyDown(KeyCode.Space) && (JumpCount < MaxJumpCount)) {
             JumpCount++;
             rigid.velocity = Vector2.zero;
@@ -44,9 +45,9 @@ public class Player : MonoBehaviour
             
         }
         
-  
         if(Input.GetKey(KeyCode.DownArrow) && isGround) {
-              sound.PlaySound(Sound.Sfx.Slide);
+            if (Input.GetKeyDown(KeyCode.DownArrow)){
+              sound.PlaySound(Sound.Sfx.Slide);}
               AnimatorChange(State.Slide);
   
         }
