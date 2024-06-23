@@ -17,14 +17,15 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
     Sound sound;
-    public Collider2D collider1;
-    public Collider2D collider2;
+
+    CapsuleCollider2D  CapCollider;
     // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sound = GetComponent<Sound>();
+        CapCollider =  GetComponent<CapsuleCollider2D>();
     }
 
     //void Start() {
@@ -36,7 +37,9 @@ public class Player : MonoBehaviour
             return;
         
  
-        if(Input.GetKeyDown(KeyCode.Space) && (JumpCount < MaxJumpCount)) {
+        if(Input.GetMouseButtonDown(0) && (JumpCount < MaxJumpCount) && !Input.GetMouseButtonDown(1)) {
+            CapCollider.offset = new Vector2(0f, 0.5f);
+            CapCollider.size = new Vector2(0.7f, 1f); 
             JumpCount++;
             rigid.velocity = Vector2.zero;
             rigid.AddForce(Vector2.up * startJumpPower, ForceMode2D.Impulse);
@@ -45,22 +48,28 @@ public class Player : MonoBehaviour
             
         }
         
-        if(Input.GetKey(KeyCode.DownArrow) && isGround) {
-            if (Input.GetKeyDown(KeyCode.DownArrow)){
-              sound.PlaySound(Sound.Sfx.Slide);}
-              AnimatorChange(State.Slide);
-  
+        if(Input.GetMouseButton(1) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
+            AnimatorChange(State.Slide);
+            CapCollider.offset = new Vector2(0f, 0.34f);
+            CapCollider.size = new Vector2(0.7f, 0.67f);
+            if (Input.GetMouseButtonDown(1)){
+            sound.PlaySound(Sound.Sfx.Slide);
         }
-        else if(Input.GetKeyUp(KeyCode.DownArrow)) {
-              AnimatorChange(State.Run);
+        }
+
+        else if(Input.GetMouseButtonUp(1)) {
+            AnimatorChange(State.Run);
+            CapCollider.offset = new Vector2(0f, 0.5f);
+            CapCollider.size = new Vector2(0.7f, 1f);
         }
         
     }
 
     void OnCollisionStay2D(Collision2D collision) {
         
+
         if(!isGround) {
-        AnimatorChange(State.Run); 
+        AnimatorChange(State.Run);
         JumpCount = 0;
         }
         isGround = true;
@@ -84,8 +93,5 @@ public class Player : MonoBehaviour
         onHit.Invoke();
     }
 
-    void ColliderChange() {
-        
-    }
 
 }

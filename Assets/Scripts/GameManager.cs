@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {   //score ++
         if (Gamestart) {
-            score += Time.deltaTime * 3f;
+            score += Time.deltaTime * 1f;
             globalSpeed = ORIGIN_SPEED + score * 0.01f;
         }
     }
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("Score", Mathf.Max(highscore, score));
     }
     public void Restart() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         score = 0;
         Gamestart = true;
     }

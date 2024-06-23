@@ -12,6 +12,10 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!GameManager.Gamestart){
+            return;
+        }
+
         uiText = GetComponent<Text>();
 
         if (ishighScore) {
@@ -24,8 +28,8 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if(!GameManager.Gamestart)
-            return;
+        if(!GameManager.Gamestart){
+            return;}
         
         if (ishighScore && GameManager.score < highscore)
             return;
