@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public enum State { Run, Jump, Slide, Hit, Die, Skill }
+    public enum State { Run, Jump, Slide, Hit, Die }
     public float startJumpPower;
     public bool isGround;
     public int JumpCount = 0;
