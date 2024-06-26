@@ -21,5 +21,6 @@ public class Randomobject : MonoBehaviour
     {
         int ran = Random.Range(0, sprites.Length);
         spriter.sprite = sprites[ran];
+        Instantiate(gameObject,new Vector2(1,1));
     }
 }
