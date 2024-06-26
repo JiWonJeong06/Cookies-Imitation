@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
             
         }
         
-        if((Input.GetKey(KeyCode.DownArrow) || Input.GetMouseButton(1)) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
+        if(Input.GetMouseButton(1) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
             AnimatorChange(State.Slide);
             CapCollider.offset = new Vector2(0f, 0.34f);
             CapCollider.size = new Vector2(0.7f, 0.67f);
