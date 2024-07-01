@@ -8,7 +8,7 @@ public class Infinity : MonoBehaviour
     public UnityEvent onMove;
 
     void LateUpdate() {
-        if (transform.position.x > -20) {
+        if (transform.position.x > -30) {
             return;
         }
 

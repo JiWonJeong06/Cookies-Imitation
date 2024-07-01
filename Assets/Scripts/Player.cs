@@ -27,8 +27,6 @@ public class Player : MonoBehaviour
         CapCollider =  GetComponent<CapsuleCollider2D>();
     }
 
-    //void Start() {
-    //    sound.PlaySound(Sound.Sfx.Reset); }
     void Update()
     {   
         
@@ -44,15 +42,15 @@ public class Player : MonoBehaviour
             rigid.AddForce(Vector2.up * startJumpPower, ForceMode2D.Impulse);
             sound.PlaySound(Sound.Sfx.Jump);
             AnimatorChange(State.Jump);
-            
         }
         
-        if((Input.GetMouseButton(1)|| Input.GetKey(KeyCode.Space)) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
+        if(Input.GetMouseButton(1) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
             AnimatorChange(State.Slide);
             CapCollider.offset = new Vector2(0f, 0.34f);
             CapCollider.size = new Vector2(0.7f, 0.67f);
             if (Input.GetMouseButtonDown(1)){
             sound.PlaySound(Sound.Sfx.Slide);
+            AnimatorChange(State.Slide);
         }
         }
 

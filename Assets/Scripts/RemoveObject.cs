@@ -15,14 +15,9 @@ public class RemoveObject : MonoBehaviour
         if(!GameManager.Gamestart){
             return;
         }
-        if (transform.position.x < -20)
+        if (transform.position.x < -30)
         {
-            DestroySelf();
+            Destroy(gameObject);
         }
-    }
-
-    void DestroySelf()
-    {
-        Destroy(gameObject);
     }
 }
