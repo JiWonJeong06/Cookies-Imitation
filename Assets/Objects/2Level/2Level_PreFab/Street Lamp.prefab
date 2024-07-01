@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3013406499336393706}
   - component: {fileID: 417067387195111428}
   - component: {fileID: 4212174880759423142}
-  - component: {fileID: 7185528686315494958}
   - component: {fileID: 3671767901766189033}
+  - component: {fileID: 4781289335204410075}
   m_Layer: 0
   m_Name: Street Lamp
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,21 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Count: 0
   Scrollspeed: 2.5
---- !u!114 &7185528686315494958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634097074116905933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!60 &3671767901766189033
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -193,3 +178,15 @@ PolygonCollider2D:
       - {x: 0.25, y: 0}
       - {x: 0.06274433, y: 1.0000889}
   m_UseDelaunayMesh: 0
+--- !u!114 &4781289335204410075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634097074116905933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

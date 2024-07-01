@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3999802032186742985}
   - component: {fileID: 4697552249733361694}
   - component: {fileID: 7002850256370020259}
-  - component: {fileID: 6034678374694422315}
   - component: {fileID: 6823267632246600380}
+  - component: {fileID: -7321963309394734773}
   m_Layer: 0
   m_Name: short_fence
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,21 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Count: 0
   Scrollspeed: 2.5
---- !u!114 &6034678374694422315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8193983409849008625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!60 &6823267632246600380
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -193,3 +178,15 @@ PolygonCollider2D:
       - {x: 0.4375, y: 0}
       - {x: 0.24572611, y: 0.62263244}
   m_UseDelaunayMesh: 0
+--- !u!114 &-7321963309394734773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193983409849008625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

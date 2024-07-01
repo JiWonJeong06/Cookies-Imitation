@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
             return;
         
  
-        if(Input.GetMouseButtonDown(0) && (JumpCount < MaxJumpCount) && !Input.GetMouseButtonDown(1)) {
+        if(Input.GetMouseButtonDown(0)  && (JumpCount < MaxJumpCount) && !Input.GetMouseButtonDown(1)) {
             CapCollider.offset = new Vector2(0f, 0.5f);
             CapCollider.size = new Vector2(0.7f, 1f); 
             JumpCount++;
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
             
         }
         
-        if(Input.GetMouseButton(1) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
+        if((Input.GetMouseButton(1)|| Input.GetKey(KeyCode.Space)) && isGround && !Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0)) {
             AnimatorChange(State.Slide);
             CapCollider.offset = new Vector2(0f, 0.34f);
             CapCollider.size = new Vector2(0.7f, 0.67f);

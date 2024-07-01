@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 76854997440696079}
   - component: {fileID: 7615179971143513371}
   - component: {fileID: 5216155645430282228}
-  - component: {fileID: 5645473787203334594}
   - component: {fileID: 8259870272802844846}
+  - component: {fileID: -2176370336030730004}
   m_Layer: 0
   m_Name: B_Bullon
   m_TagString: Untagged
@@ -129,21 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Count: 0
   Scrollspeed: 2.5
---- !u!114 &5645473787203334594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6009473818553658160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!60 &8259870272802844846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -197,3 +182,15 @@ PolygonCollider2D:
       - {x: 0.1864624, y: 0.4375}
       - {x: 0.1213913, y: 0.5}
   m_UseDelaunayMesh: 0
+--- !u!114 &-2176370336030730004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009473818553658160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8103334987367598960}
   - component: {fileID: 752729500121018507}
   - component: {fileID: 5976976772319578370}
-  - component: {fileID: 1976213461618405282}
   - component: {fileID: 8030692171800208926}
+  - component: {fileID: -91859671298247390}
   m_Layer: 0
   m_Name: small_trash
   m_TagString: Untagged
@@ -128,22 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 0
---- !u!114 &1976213461618405282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8667753138569903367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
+  Scrollspeed: 2.5
 --- !u!60 &8030692171800208926
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -197,3 +182,15 @@ PolygonCollider2D:
       - {x: 0.2208251, y: 0.24179691}
       - {x: 0.08196433, y: 0.44138658}
   m_UseDelaunayMesh: 0
+--- !u!114 &-91859671298247390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667753138569903367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

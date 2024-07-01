@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5483382739237917140}
   - component: {fileID: 2129190041819136000}
-  - component: {fileID: 7954020715105182171}
   - component: {fileID: 5024853582191392962}
   - component: {fileID: 3611488192941901121}
   - component: {fileID: 3574162749583316258}
+  - component: {fileID: 2037682806981038027}
   m_Layer: 0
   m_Name: drone
   m_TagString: Untagged
@@ -88,21 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7954020715105182171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5348181018626045203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &5024853582191392962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,13 +158,13 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.6875, y: 0.25}
     newSize: {x: 0.6875, y: 0.25}
     adaptiveTilingThreshold: 0.5
@@ -188,8 +173,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.34375, y: 0.125}
-      - {x: -0.22142792, y: -0.12989289}
-      - {x: 0.2230587, y: -0.125}
-      - {x: 0.34375, y: 0.125}
+    - - {x: -0.34375, y: 0.25}
+      - {x: -0.21601593, y: 0.003193375}
+      - {x: 0.21761274, y: 0}
+      - {x: 0.34375, y: 0.25}
   m_UseDelaunayMesh: 0
+--- !u!114 &2037682806981038027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348181018626045203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

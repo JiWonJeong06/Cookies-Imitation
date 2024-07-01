@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6959254990315396330}
   - component: {fileID: 6362143338298823852}
-  - component: {fileID: 4058392416086917066}
   - component: {fileID: 7045558372450122914}
   - component: {fileID: 7539162115529103502}
   - component: {fileID: 1758118060462417690}
+  - component: {fileID: -6353490306281923104}
   m_Layer: 0
   m_Name: banana
   m_TagString: Untagged
@@ -88,21 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4058392416086917066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165813673890215965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eabd3a6823cd44bad79587653efe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMove:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7045558372450122914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,3 +179,15 @@ PolygonCollider2D:
       - {x: 0.2381711, y: 0.6696316}
       - {x: -0.3998289, y: 0.3697368}
   m_UseDelaunayMesh: 0
+--- !u!114 &-6353490306281923104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8165813673890215965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac00d29b3e9c1540ad483a579e51518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
