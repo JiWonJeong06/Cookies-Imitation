@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     // Update is called once per frame
-    private void Update()
+    public void NextSceneUpdate()
     {
-        
-        SceneManager.LoadScene("InGame");
-   
+        LoadingSceneManager.LoadScene("InGame");
     }
 }

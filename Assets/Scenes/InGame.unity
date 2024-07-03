@@ -739,7 +739,7 @@ MonoBehaviour:
   - {fileID: 6009473818553658160, guid: 5435740453c5c3443953945565cdab56, type: 3}
   - {fileID: 6009473818553658160, guid: 030e115eee3f67a47bb239a256bc1249, type: 3}
   - {fileID: 6009473818553658160, guid: 9373846c2b4f5344498ea20a46598dd7, type: 3}
-  spawnInterval: 3
+  spawnInterval: 2.5
 --- !u!1001 &628727746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878777964}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53c6333e49ae696418442d237bb30438, type: 3}
   m_Name: 
@@ -2157,7 +2157,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 878777965}
         m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
-        m_MethodName: SceneChange
+        m_MethodName: MainSceneUpdate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

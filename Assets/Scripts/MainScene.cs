@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainScene : MonoBehaviour
 {
     // Update is called once per frame
-    private void Update()
+    public void MainSceneUpdate()
     {       
-            SceneManager.LoadScene("Menu");
+            LoadingSceneManager.LoadScene("Menu");
             GameManager.score = 0;
    
     }
