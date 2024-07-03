@@ -8,7 +8,7 @@ public class MainScene : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {       
-            LoadingSceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu");
             GameManager.score = 0;
    
     }

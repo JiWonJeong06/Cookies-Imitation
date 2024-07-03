@@ -9,7 +9,7 @@ public class NextScene : MonoBehaviour
     private void Update()
     {
         
-        LoadingSceneManager.LoadScene("InGame");
+        SceneManager.LoadScene("InGame");
    
     }
 }
