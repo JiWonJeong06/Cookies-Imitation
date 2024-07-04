@@ -20,7 +20,7 @@ public class Score : MonoBehaviour
 
         if (ishighScore) {
             highscore = PlayerPrefs.GetFloat("Score");
-            uiText.text = (highscore - GameManager.score).ToString("F1") + " M";
+            uiText.text = highscore.ToString("F0") + " M";
         }
 
     }
@@ -34,6 +34,6 @@ public class Score : MonoBehaviour
         if (ishighScore && GameManager.score < highscore)
             return;
         
-        uiText.text = GameManager.score.ToString("F1") + " M";
+        uiText.text = GameManager.score.ToString("F0") + " M";
     }
 }

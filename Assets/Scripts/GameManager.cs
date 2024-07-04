@@ -17,9 +17,8 @@ public class GameManager : MonoBehaviour
 
     public static bool Gamestart;
 
-    public GameObject UIover;
 
-    public bool isPaused = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -35,39 +34,22 @@ public class GameManager : MonoBehaviour
     {   //score ++
         if (Gamestart) {
             score += Time.deltaTime * 10f;
-            globalSpeed = ORIGIN_SPEED + score * 0.003f;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            TogglePause();
+            globalSpeed = ORIGIN_SPEED + score * 0.0025f;
         }
     }
 
     public void GameOver() {
+        LoadingSceneManager.LoadScene("TotalScene");
         Gamestart = false;
-        UIover.SetActive(true);
         float highscore = PlayerPrefs.GetFloat("Score");
         PlayerPrefs.SetFloat("Score", Mathf.Max(highscore, score));
     }
     public void Restart() {
-        SceneManager.LoadScene(1);
+        LoadingSceneManager.LoadScene("InGame");
         score = 0;
         Gamestart = true;
     }
 
-    public void TogglePause(){
-        isPaused = !isPaused;
-        if (isPaused)
-        {
-            Time.timeScale = 0f; // 게임 일시 중지
-           
-        }
-        else
-        {
-            Time.timeScale = 1f; // 게임 재개
-            
-        }
-    }
     }
  
 
