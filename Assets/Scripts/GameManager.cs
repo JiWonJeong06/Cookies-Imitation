@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         Gamestart = true;
     }
+
 
     }
  
