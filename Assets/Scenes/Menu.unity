@@ -1047,6 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b32f6b438551b4a8048527b3cfbeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSelectedButton: {fileID: 0}
 --- !u!1 &569773040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b32f6b438551b4a8048527b3cfbeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSelectedButton: {fileID: 650216528}
 --- !u!4 &569773042
 Transform:
   m_ObjectHideFlags: 0
