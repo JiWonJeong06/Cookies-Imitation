@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     Animator animator;
     Sound sound;
 
+    public string JumpKey;
+    public string SlideKey;
     CapsuleCollider2D  CapCollider;
     // Start is called before the first frame update
     void Awake()

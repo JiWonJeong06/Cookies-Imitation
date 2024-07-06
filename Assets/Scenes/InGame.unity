@@ -1142,6 +1142,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  JumpKey: 
+  SlideKey: 
 --- !u!95 &1145664091
 Animator:
   serializedVersion: 5
@@ -1319,7 +1321,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.49
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1635,6 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b32f6b438551b4a8048527b3cfbeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSelectedButton: {fileID: 0}
 --- !u!4 &1641467564
 Transform:
   m_ObjectHideFlags: 0
