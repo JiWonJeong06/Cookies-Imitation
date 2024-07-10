@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public enum State { Run, Jump, Slide, Hit, Die }
+    public enum State { Jump, Slide }
     public float startJumpPower;
     public bool isGround;
     public int JumpCount = 0;
