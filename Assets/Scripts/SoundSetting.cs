@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SoundSetting : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public AudioSource musicsource;
+
+    public AudioSource effectsource;
+    public AudioSource effectsource2;
+
+    public void SetMusicVolume(float volume){
+        musicsource.volume = volume;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SetEffectVolume(float volume){
+        effectsource.volume = volume;
+        effectsource2.volume = volume;
     }
 }
