@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b32f6b438551b4a8048527b3cfbeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSelectedButton: {fileID: 0}
 --- !u!4 &565292534
 Transform:
   m_ObjectHideFlags: 0
@@ -725,12 +726,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6cbcfe80060e4534fa40caa51db70ebb, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

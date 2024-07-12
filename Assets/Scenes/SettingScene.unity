@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicsource: {fileID: 662592946}
-  effectsource: {fileID: 322627440}
-  effectsource2: {fileID: 1590844557}
+  Jumpsource: {fileID: 322627440}
+  Slidesource: {fileID: 1590844557}
 --- !u!4 &84351226
 Transform:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 84351224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6966326, y: 1.9447846, z: -0.010631964}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 322627439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6966326, y: 1.9447846, z: -0.010631964}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -983,10 +983,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9dff9c7ad8b80cc47a0dd16d1316fc4f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1077,7 +1077,7 @@ Transform:
   m_GameObject: {fileID: 662592945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45255187, y: 1.2029341, z: 0.003865811}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2060,7 +2060,7 @@ Transform:
   m_GameObject: {fileID: 1590844556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6966326, y: 1.9447846, z: -0.010631964}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2335,7 +2335,7 @@ SceneRoots:
   - {fileID: 1891679897}
   - {fileID: 569773042}
   - {fileID: 1371409945}
-  - {fileID: 662592947}
   - {fileID: 84351226}
+  - {fileID: 662592947}
   - {fileID: 322627441}
   - {fileID: 1590844558}

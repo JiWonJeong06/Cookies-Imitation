@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sound : MonoBehaviour
 {
 
-    public enum Sfx {  Jump, Slide, BGM, Hit, Die, Skill, Reset  }
+    public enum Sfx {  Jump, Slide  }
     public AudioClip[] clips;
 
     AudioSource audios;

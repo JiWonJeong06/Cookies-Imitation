@@ -5,16 +5,19 @@ using UnityEngine;
 public class SoundSetting : MonoBehaviour
 {
     public AudioSource musicsource;
-
-    public AudioSource effectsource;
-    public AudioSource effectsource2;
-
+    public AudioSource Jumpsource;
+    public AudioSource Slidesource;
     public void SetMusicVolume(float volume){
         musicsource.volume = volume;
+        musicsource.Play();
     }
 
     public void SetEffectVolume(float volume){
-        effectsource.volume = volume;
-        effectsource2.volume = volume;
+        if(Jumpsource.volume >= 0 ) {
+            musicsource.Stop();
+        }
+        Jumpsource.volume = volume;
+        Slidesource.volume = volume;
+        Jumpsource.Play();
     }
 }
