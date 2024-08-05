@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     {   //score ++
         if (Gamestart) {
             score += Time.deltaTime * 10f;
-            globalSpeed = ORIGIN_SPEED + score * 0.0025f;
+            globalSpeed = ORIGIN_SPEED + score * 0.0001f;
         }
     }
 
