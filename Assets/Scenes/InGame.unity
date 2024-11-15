@@ -1638,6 +1638,10 @@ PrefabInstance:
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 8373307084167956827, guid: c83334b0bd39aaa44b02ea544da35bf1, type: 3}
+      propertyPath: JumpKey
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373307084167956827, guid: c83334b0bd39aaa44b02ea544da35bf1, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 452398544}
