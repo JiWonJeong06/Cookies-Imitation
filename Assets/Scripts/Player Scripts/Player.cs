@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
             return;
         
  
-        if(Input.GetKeyDown(KeyCode.UpArrow)  && (JumpCount < MaxJumpCount) && !Input.GetKeyDown(KeyCode.DownArrow)) {
+        if(Input.GetKeyDown(KeyCode.Space)  && (JumpCount < MaxJumpCount)) {
             CapCollider.offset = new Vector2(0f, 0.5f);
             CapCollider.size = new Vector2(0.7f, 1f); 
             JumpCount++;
@@ -44,21 +44,6 @@ public class Player : MonoBehaviour
             rigid.AddForce(Vector2.up * startJumpPower, ForceMode2D.Impulse);
             sound.PlaySound(Sound.Sfx.Jump);
             AnimatorChange(State.Jump);
-        }
-        
-        if(Input.GetKey(KeyCode.DownArrow) && isGround && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.UpArrow)) {
-            AnimatorChange(State.Slide);
-            CapCollider.offset = new Vector2(0f, 0.34f);
-            CapCollider.size = new Vector2(0.7f, 0.67f);
-            if (Input.GetKeyDown(KeyCode.DownArrow)){
-            sound.PlaySound(Sound.Sfx.Slide);
-        }
-        }
-
-        else if(Input.GetKeyUp(KeyCode.DownArrow)) {
-            AnimatorChange(State.Run);
-            CapCollider.offset = new Vector2(0f, 0.5f);
-            CapCollider.size = new Vector2(0.7f, 1f);
         }
         
     }
