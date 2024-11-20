@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {   
 
-    const float ORIGIN_SPEED = 2;
+    const float ORIGIN_SPEED = 1;
 
     public static float globalSpeed; 
 
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {   //score ++
         if (Gamestart) {
-            score += Time.deltaTime * 10f;
+            score += Time.deltaTime * 5f;
             globalSpeed = ORIGIN_SPEED + score * 0.0001f;
         }
     }
