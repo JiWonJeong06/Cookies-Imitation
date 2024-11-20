@@ -56,12 +56,10 @@ public class Player : MonoBehaviour
         JumpCount = 0;
         }
         isGround = true;
-      
     }  
 
     void OnCollisionExit2D(Collision2D collision) {
         AnimatorChange(State.Jump);
-        
         isGround = false;
     }
 
