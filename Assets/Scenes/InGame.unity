@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 38}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 0, y: 29.1}
+  m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51746395
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5dffb1b7e5060394c9b5c0db7d2a22c2, type: 3}
-    m_FontSize: 13
+    m_FontSize: 15
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -678,8 +678,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   under_objs:
   - {fileID: 4715836838047401913, guid: d407d75ce0f54c34582b3f73b127c2bf, type: 3}
+  - {fileID: 3038708779001171791, guid: f309adb8982dfb54a8c99000d6d882c4, type: 3}
+  - {fileID: 3038708779001171791, guid: 51092c5af442d134988dd0499e39a333, type: 3}
+  - {fileID: 421985049688141139, guid: a723b47742856584b8c51b76fa8e7357, type: 3}
+  - {fileID: 8656404999083228973, guid: 0a21d8c7e18c5024cb7e3f925705e27f, type: 3}
+  - {fileID: 8165813673890215965, guid: 5b0e125f2e14f7e4e9494ddd4ad01be4, type: 3}
+  - {fileID: 965265038277410881, guid: 8ea4bb11c018b9641b65bf5e3ccbebb9, type: 3}
+  - {fileID: 3276580434710118348, guid: cc11c43125d847c4cb22a92d2da82ade, type: 3}
+  - {fileID: 8193983409849008625, guid: f561a943300d5c54291f7e6d6e8d4c8a, type: 3}
+  - {fileID: 8193983409849008625, guid: 19c031ffc8f225246bf91bc45cba648f, type: 3}
+  - {fileID: 8667753138569903367, guid: b4e9fc13af270e44a8bbf3c9ad906601, type: 3}
+  - {fileID: 1634097074116905933, guid: 26ab007f2c7f5fa4bb6f75404d778041, type: 3}
+  - {fileID: 8193983409849008625, guid: 19c031ffc8f225246bf91bc45cba648f, type: 3}
+  - {fileID: 8193983409849008625, guid: 19c031ffc8f225246bf91bc45cba648f, type: 3}
+  - {fileID: 8193983409849008625, guid: 19c031ffc8f225246bf91bc45cba648f, type: 3}
+  - {fileID: 8656404999083228973, guid: 0a21d8c7e18c5024cb7e3f925705e27f, type: 3}
   on_objs: []
-  spawnInterval: 2
+  spawnInterval: 1.25
 --- !u!1001 &628727746
 PrefabInstance:
   m_ObjectHideFlags: 0

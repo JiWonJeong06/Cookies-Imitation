@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 2.5
+  Scrollspeed: 3
 --- !u!60 &3671767901766189033
 PolygonCollider2D:
   m_ObjectHideFlags: 0

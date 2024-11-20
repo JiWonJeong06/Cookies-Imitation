@@ -814,7 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count: 0
-  Scrollspeed: 2.5
+  Scrollspeed: 3
 --- !u!114 &3835548361866916209
 MonoBehaviour:
   m_ObjectHideFlags: 0
